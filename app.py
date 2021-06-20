@@ -25,7 +25,8 @@ def get_country_name(name):
 
 @app.route('/')
 def index():
-    return 'health check! '
+    data='Health check 0.1'
+    return json.dumps(data)
 
 @app.route("/names",methods=['GET','POST'])
 def names_data():
